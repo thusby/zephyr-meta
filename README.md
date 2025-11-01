@@ -206,9 +206,24 @@ Bygg alle prosjekt for å verifisere at templates og lib/ fungerer:
 
 ## 📦 Versjonar
 
-- **Zephyr RTOS:** v3.7.1
+- **Zephyr RTOS:** v3.7.1 (LTS) - [Oppgradering](docs/UPGRADING_ZEPHYR.md)
 - **Zephyr SDK:** 0.16.8
 - **DevContainer:** zephyrprojectrtos/ci:v0.26.13
+
+### Sjekk og oppdater Zephyr-versjon
+
+```bash
+# Sjekk noverande versjon
+./scripts/check-zephyr-version.sh
+
+# Oppdater template til ny versjon
+./scripts/update-zephyr-version.sh v4.2.1 --template-only
+
+# Oppdater alle prosjekt
+./scripts/update-zephyr-version.sh v4.2.1 --all
+```
+
+Sjå [UPGRADING_ZEPHYR.md](docs/UPGRADING_ZEPHYR.md) for detaljar.
 
 ## 🐛 Feilsøking
 
