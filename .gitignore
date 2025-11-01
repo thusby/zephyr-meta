@@ -1,0 +1,25 @@
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts (shouldn't be in meta-repo, but just in case)
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+
+# Temporary files
+*.tmp
+*.log

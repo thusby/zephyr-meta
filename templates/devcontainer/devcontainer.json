@@ -1,0 +1,33 @@
+{
+    "name": "Zephyr {{PROJECT_DISPLAY_NAME}}",
+    "image": "zephyrprojectrtos/ci:v0.26.13",
+    "workspaceFolder": "/workspaces/{{PROJECT_NAME}}",
+
+    "runArgs": [
+        "--privileged",
+        "--device=/dev/bus/usb"
+    ],
+
+    "mounts": [
+        "type=bind,source=/dev,target=/dev"
+    ],
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-python.python",
+                "anthropic.claude-code"
+            ],
+            "settings": {
+                "cmake.configureOnOpen": false,
+                "editor.formatOnSave": true,
+                "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+                "C_Cpp.clang_format_style": "file"
+            }
+        }
+    },
+
+    "postCreateCommand": "bash /workspaces/{{PROJECT_NAME}}/.devcontainer/setup.sh"
+}

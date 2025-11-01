@@ -1,0 +1,31 @@
+# Zephyr-genererte filer
+build/
+zephyr/
+bootloader/
+modules/
+tools/
+zephyr-sdk-*/
+.west/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Build artifacts
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+
+# Editor backups
+*~
+*.swp
+*.swo
