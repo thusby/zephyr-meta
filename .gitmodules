@@ -1,0 +1,6 @@
+[submodule "boards/arduino-nano"]
+	path = boards/arduino-nano
+	url = git@github.com:thusby/zephyr_dev.git
+[submodule "boards/nrf52840"]
+	path = boards/nrf52840
+	url = git@github.com:thusby/zephyr_nrf52840.git
